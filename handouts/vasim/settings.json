@@ -1,0 +1,21 @@
+{
+  "test_dir": "tests",
+  "mode": "exe",
+  "test_suite_names": ["vasim"],
+  "non_zero_exit_status_penalty": 0.75,
+  "memory_penalty": 0.5,
+  "test_suites": {
+    "vasim": [
+      { "desc": "cols",  "args": ["-f", "col_trace.txt" ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 },
+      { "desc": "rows",  "args": ["-f", "row_trace.txt" ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 },
+      { "desc": "cols 5000",  "args": ["-n", "5000", "-f", "col_trace.txt" ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 },
+      { "desc": "rows 5000",  "args": ["-n", "5000", "-f", "row_trace.txt"  ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 },
+      { "desc": "cols 10000",  "args": ["-n", "10000", "-f", "col_trace.txt" ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 },
+      { "desc": "rows 10000",  "args": ["-n", "10000", "-f", "row_trace.txt" ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 },
+      { "desc": "cols 100000",  "args": ["-n", "100000", "-f", "col_trace.txt" ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 },
+      { "desc": "rows 100000",  "args": ["-n", "100000", "-f", "row_trace.txt"  ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10},
+      { "desc": "cols 50000 verbose",  "args": ["-n", "50000", "-v", "-f", "col_trace.txt"],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 },
+      { "desc": "rows 50000 verbose",  "args": ["-n", "50000", "-v", "-f", "row_trace.txt" ],  "diff": "normal", "infile": "", "outfile": "",  "valgrind": false, "points":10 }      
+      ]
+  }
+}

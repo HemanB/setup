@@ -1,0 +1,5 @@
+Blocks size = 16, cache size = 1024, num_sets = 64
+Hits: 130875
+Misses: 50509
+Total accesses; 181384
+Miss ratio: 0.278464

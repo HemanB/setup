@@ -1,0 +1,5 @@
+#
+# Infinite
+# Loop.  Don't stop.
+#
+jmp 0,$0

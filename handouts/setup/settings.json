@@ -1,0 +1,12 @@
+{
+  "test_dir": "tests",
+  "mode": "exe",
+  "test_suite_names": ["hello"],
+  "non_zero_exit_status_penalty": 0.75,
+  "memory_penalty": 0.5,
+  "test_suites": {
+    "hello": [
+      { "desc": "hello",  "args": [""],  "diff": "normal", "infile": "", "outfile": "", "valgrind": false, "points": 100 }
+    ]
+  }
+}

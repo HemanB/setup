@@ -1,0 +1,45 @@
+#
+# Max
+#
+# Output the max among the inputs.
+# Presumptions:
+# - at least one input, else it faults.
+# - r15 is set to insize at launch.
+# - Machine is OK with registers going negative.
+#
+#   i = 0;
+#   max = input[i];
+# loop:
+#   i += 1;
+#   tmp = insize;
+#   tmp -= i;
+#   if (tmp == 0)
+#     goto out:
+#   next = input[i];
+#   tmp = max;
+#   tmp -= next;
+#   if (tmp > 0)
+#     goto loop;
+#   max = next;
+#   goto loop;
+# out:
+#   output max;
+#
+#
+set $0,r0
+set $1,r1
+ldi (r0),r8
+# loop: $3
+add r1,r0
+mov r15,r7
+sub r0,r7
+bez r7,$13
+ldi (r0),r3
+mov r8,r7
+sub r3,r7
+bgz r7,$3
+mov r3,r8
+jmp 0,$3
+# out: $13
+set $0,r0
+sto r8,(r0)
