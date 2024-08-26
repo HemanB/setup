@@ -1,3 +1,0 @@
-Running for 5000 accesses
-
-Accesses 5000: Hits: 4978 Faults: 22

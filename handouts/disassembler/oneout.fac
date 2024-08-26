@@ -1,6 +1,0 @@
-#
-# Output number one.
-#
-set $1,r0
-set $0,r1
-sto r0,(r1)

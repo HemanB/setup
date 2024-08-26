@@ -1,2 +1,0 @@
-
-Accesses 181384: Hits: 181140 Faults: 244
